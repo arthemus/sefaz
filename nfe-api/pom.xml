@@ -4,41 +4,40 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.nfe.produces</groupId>
-		<artifactId>nfe.produces</artifactId>
+		<groupId>org.sefaz</groupId>
+		<artifactId>sefaz</artifactId>
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../build/pom.xml</relativePath>
 	</parent>
 
-	<artifactId>nfe.produces.api</artifactId>
+	<artifactId>sefaz.api</artifactId>
 	<packaging>jar</packaging>
 
 	<name>Classes principais para processamento da NF-e</name>
 
 	<dependencies>
 
-		<!-- Dependencias internas -->
 		<dependency>
-			<groupId>org.nfe.produces</groupId>
-			<artifactId>nfe.produces.certificado</artifactId>
+			<groupId>org.sefaz</groupId>
+			<artifactId>sefaz.certificado</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.nfe.produces</groupId>
-			<artifactId>nfe.produces.commons</artifactId>
+			<groupId>org.sefaz</groupId>
+			<artifactId>sefaz.commons</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.nfe.produces</groupId>
-			<artifactId>nfe.produces.wsdl</artifactId>
+			<groupId>org.sefaz</groupId>
+			<artifactId>sefaz.wsdl</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.nfe.produces</groupId>
-			<artifactId>nfe.produces.xsd</artifactId>
+			<groupId>org.sefaz</groupId>
+			<artifactId>sefaz.xsd</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>

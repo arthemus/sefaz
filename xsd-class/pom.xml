@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.nfe.produces</groupId>
-		<artifactId>nfe.produces</artifactId>
+		<groupId>org.sefaz</groupId>
+		<artifactId>sefaz</artifactId>
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../build/pom.xml</relativePath>
 	</parent>
 
-	<artifactId>nfe.produces.xsd</artifactId>
+	<artifactId>sefaz.xsd</artifactId>
 	<packaging>jar</packaging>
 
 	<name>Arquivos XSD do layout da NF-e</name>
