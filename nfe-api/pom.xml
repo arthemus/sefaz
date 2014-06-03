@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.nfe.produces</groupId>
+		<artifactId>nfe.produces</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../build/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>nfe.produces.api</artifactId>
+	<packaging>jar</packaging>
+
+	<name>Classes principais para processamento da NF-e</name>
+
+	<dependencies>
+
+		<!-- Dependencias internas -->
+		<dependency>
+			<groupId>org.nfe.produces</groupId>
+			<artifactId>nfe.produces.certificado</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nfe.produces</groupId>
+			<artifactId>nfe.produces.commons</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nfe.produces</groupId>
+			<artifactId>nfe.produces.wsdl</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.nfe.produces</groupId>
+			<artifactId>nfe.produces.xsd</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>nfe-api</finalName>
+	</build>
+
+</project>

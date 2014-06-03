@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.nfe.produces</groupId>
+		<artifactId>nfe.produces</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../build/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>nfe.produces.certificado</artifactId>
+	<packaging>jar</packaging>
+
+	<name>Informacoes dos certificados digitais</name>
+
+	<build>
+		<finalName>certificado-utils</finalName>
+	</build>
+
+</project>

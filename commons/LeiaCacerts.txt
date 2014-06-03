@@ -1,0 +1,4 @@
+O arquivo NFeCacerts é um arquivo necessário na validação do Certificado Digital.
+
+Ele pode ser gerado utilizando a classe 'GeraArquivoNfeCacertsTodosEstadosMain.java' e deve ser 
+copiado para o diretório src/main/resources dos módulos 'Api' e 'Certificado'.

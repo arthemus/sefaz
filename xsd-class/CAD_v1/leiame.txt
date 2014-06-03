@@ -1,0 +1,5 @@
+As classe do pacote br/inf/portafiscal/nfe são geradas partir do XSD 
+sistema_v1.01.xsd são utilizadas para importação e exportação das 
+informações de cadastros feitos pelo Software da receita federal.
+
+xjc sistema_v1.01.xsd
