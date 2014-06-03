@@ -19,7 +19,7 @@ class ExibiInformacoesCertificadoDigitalA1DefinidoMain {
 
 	public static void main(String[] args) {
 		try {
-			String caminhoDoCertificadoDoCliente = "src/test/resources/associacao.pfx";
+			String caminhoDoCertificadoDoCliente = "src/test/resources/certificado-invalido.pfx";
 			String senhaDoCertificado = "associacao";
 			KeyStore keystore = KeyStore.getInstance(("PKCS12"));
 			keystore.load(new FileInputStream(caminhoDoCertificadoDoCliente), senhaDoCertificado.toCharArray());

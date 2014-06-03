@@ -20,6 +20,10 @@ class ExibeDadosCertificadosDigitaisLocaisMain {
 			KeyStore keyStore = KeyStore.getInstance("Windows-MY", "SunMSCAPI");
 			keyStore.load(null, null);
 			Enumeration<String> al = keyStore.aliases();
+			if (!al.hasMoreElements()) {
+				info("Nenhum certificado instalado.");
+				return;
+			}	
 			while (al.hasMoreElements()) {
 				String alias = al.nextElement();
 				info("--------------------------------------------------------");

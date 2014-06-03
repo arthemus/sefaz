@@ -35,7 +35,7 @@ class ExibeInformacoesCertificadoDigitalDefinidoMain {
 
 	public static void main(String[] args) {
 		try {
-			String caminhoDoCertificadoDoCliente = "src/test/resources/associacao.pfx";
+			String caminhoDoCertificadoDoCliente = "src/test/resources/certificado-invalido.pfx";
 			String senhaDoCertificadoDoCliente = "associacao";
 			InputStream entrada = new FileInputStream(caminhoDoCertificadoDoCliente);
 			KeyStore ks = KeyStore.getInstance("pkcs12");

@@ -15,14 +15,16 @@ import org.nfe.certificado.CertificadoDigitalLocal;
  */
 public class CertificadoFactory {
 
+	private static final String SENHA_VALIDA = "sigma";
+	private static final String SENHA_INVALIDA = "associacao";
+
 	public static CertificadoDigital getCertificadoLocalValido() {
 		FileInputStream caminhoDoCertificadoDoCliente = null;
 		try {
 			caminhoDoCertificadoDoCliente = new FileInputStream(new File("src/test/resources/certificado-valido.pfx"));
 		} catch (FileNotFoundException e1) {			
 			e1.printStackTrace();
-		}
-		String senhaDoCertificado = "sigma";
+		}		
 		FileInputStream arquivoCacertsGeradoTodosOsEstados = null;
 		try {
 			arquivoCacertsGeradoTodosOsEstados = new FileInputStream(new File("src/test/resources/NFeCacerts"));
@@ -31,7 +33,7 @@ public class CertificadoFactory {
 		}		
 		CertificadoDigitalLocal certificado = null;
 		try {
-			certificado = new CertificadoDigitalLocal(caminhoDoCertificadoDoCliente, senhaDoCertificado, arquivoCacertsGeradoTodosOsEstados);
+			certificado = new CertificadoDigitalLocal(caminhoDoCertificadoDoCliente, SENHA_VALIDA, arquivoCacertsGeradoTodosOsEstados);
 		} catch (CertificateException e) {
 			e.printStackTrace();
 		}
@@ -44,8 +46,7 @@ public class CertificadoFactory {
 			caminhoDoCertificadoDoCliente = new FileInputStream(new File("src/test/resources/certificado-invalido.pfx"));
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
-		}
-		String senhaDoCertificado = "associacao";
+		}		
 		FileInputStream arquivoCacertsGeradoTodosOsEstados = null;
 		try {
 			arquivoCacertsGeradoTodosOsEstados = new FileInputStream(new File("src/test/resources/NFeCacerts"));
@@ -54,7 +55,7 @@ public class CertificadoFactory {
 		}				
 		CertificadoDigitalLocal certificado = null;
 		try {
-			certificado = new CertificadoDigitalLocal(caminhoDoCertificadoDoCliente, senhaDoCertificado, arquivoCacertsGeradoTodosOsEstados);
+			certificado = new CertificadoDigitalLocal(caminhoDoCertificadoDoCliente, SENHA_INVALIDA, arquivoCacertsGeradoTodosOsEstados);
 		} catch (CertificateException e) {
 			e.printStackTrace();
 		}
@@ -68,7 +69,7 @@ public class CertificadoFactory {
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		}
-		String senhaDoCertificado = "123";
+		String senhaErradaDoCertificado = "123";
 		FileInputStream arquivoCacertsGeradoTodosOsEstados = null;
 		try {
 			arquivoCacertsGeradoTodosOsEstados = new FileInputStream(new File("src/test/resources/NFeCacerts"));
@@ -77,7 +78,7 @@ public class CertificadoFactory {
 		}		
 		CertificadoDigitalLocal certificado = null;
 		try {
-			certificado = new CertificadoDigitalLocal(caminhoDoCertificadoDoCliente, senhaDoCertificado, arquivoCacertsGeradoTodosOsEstados);
+			certificado = new CertificadoDigitalLocal(caminhoDoCertificadoDoCliente, senhaErradaDoCertificado, arquivoCacertsGeradoTodosOsEstados);
 		} catch (CertificateException e) {
 			e.printStackTrace();
 		}

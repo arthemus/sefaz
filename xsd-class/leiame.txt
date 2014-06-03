@@ -2,7 +2,8 @@ A partir dos arquivos de layout disponibilizados pela Secretaria da Fazenda em,
 http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=/fwLvLUSmU8=  
 é possível gerar as classes necessárias para validação dos arquivos da NF-e.
 
-Para gerar as classes de cada arquivo, pode-se usar o aplicativo XJC disponibilizado junto com o Java JDK:
+Para gerar as classes de cada arquivo, pode-se usar o aplicativo XJC 
+disponibilizado junto com o Java JDK:
 
 C:\Program Files\Java\jdk1.6.0_45\bin\xjc.exe
 
@@ -10,11 +11,14 @@ Executando a seguinte linha de comando:
 
 > xjc xmldsig-core-schema_v1.01.xsd
 
-O arquivo bat “export-pl006” pode ser utilizado para gerar todas as classes de todos os arquivo de layout de uma única vez. 
+O arquivo bat “export-pl006” pode ser utilizado para gerar todas as classes 
+de todos os arquivo de layout de uma única vez. 
 
-Caso sejam disponibilizados novos arquivos de layout pela Sefaz, os mesmo devem ser salvos no projeto e um novo arquivo para 
+Caso sejam disponibilizados novos arquivos de layout pela Sefaz, os mesmo 
+devem ser salvos no projeto e um novo arquivo para 
 extração deve ser criado, apontando as classes para serem geradas em um novo pacote: 
 
--p org.nfe.xsd.novo.pacote
+-p org.nfe.xsd.[novo].[pacote]
 
-Dessa forma pode-se manter um histórico e versionamento do projeto de acordo com a evolução da NF-e.
+Dessa forma pode-se manter um histórico e versionamento do projeto 
+de acordo com a evolução da NF-e.
