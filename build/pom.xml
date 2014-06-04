@@ -6,17 +6,19 @@
 	<groupId>org.sefaz</groupId>
 	<artifactId>sefaz</artifactId>
 	<version>1.0-SNAPSHOT</version>
-
 	<packaging>pom</packaging>
 
-	<name>Build NF-e Produces</name>
+	<name>Build Sefaz</name>
 
 	<modules>
 		<module>../certificado</module>
 		<module>../commons</module>
-		<module>../nfe-api</module>
-		<module>../web-service-class</module>
-		<module>../xsd-class</module>
+		<module>../esocial-core</module>
+		<module>../esocial-wsdl</module>
+		<module>../esocial-xsd</module>
+		<module>../nfe-core</module>
+		<module>../nfe-wsdl2</module>
+		<module>../nfe-xsd</module>
 	</modules>
 
 	<properties>
@@ -33,6 +35,7 @@
 		</repository>
 	</repositories>
 
+	<!--
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
@@ -45,10 +48,10 @@
 			<url>http://nexus-softlandsistemas.rhcloud.com/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
+	-->
 
 	<dependencies>
 
-		<!-- Testes -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -150,7 +153,6 @@
 			<version>140</version>
 		</dependency>
 
-		<!-- Log -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>

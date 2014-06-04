@@ -10,13 +10,13 @@
 		<relativePath>../build/pom.xml</relativePath>
 	</parent>
 
-	<artifactId>sefaz.wsdl</artifactId>
+	<artifactId>sefaz.nfe.wsdl2</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Arquivos WSDL da Sefaz</name>
+	<name>Compilacao dos enderecos WebServices da NF-e Versao 2.0</name>
 
 	<build>
-		<finalName>wsdl-class</finalName>
+		<finalName>sefaz.nfe.wsdl2</finalName>
 	</build>
 
 </project>

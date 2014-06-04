@@ -10,13 +10,13 @@
 		<relativePath>../build/pom.xml</relativePath>
 	</parent>
 
-	<artifactId>sefaz.xsd</artifactId>
+	<artifactId>sefaz.nfe.xsd</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Arquivos XSD do layout da NF-e</name>
+	<name>Compilacao dos Schemas XSD da NF-e 2.0</name>
 
 	<build>
-		<finalName>xsd-class</finalName>
+		<finalName>sefaz.nfe.xsd</finalName>
 	</build>
 
 </project>

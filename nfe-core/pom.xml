@@ -10,10 +10,10 @@
 		<relativePath>../build/pom.xml</relativePath>
 	</parent>
 
-	<artifactId>sefaz.api</artifactId>
+	<artifactId>sefaz.nfe.core</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Classes principais para processamento da NF-e</name>
+	<name>Implementacao do SPED NF-e</name>
 
 	<dependencies>
 
@@ -31,13 +31,13 @@
 		</dependency>
 		<dependency>
 			<groupId>org.sefaz</groupId>
-			<artifactId>sefaz.wsdl</artifactId>
+			<artifactId>sefaz.nfe.wsdl2</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.sefaz</groupId>
-			<artifactId>sefaz.xsd</artifactId>
+			<artifactId>sefaz.nfe.xsd</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
@@ -45,7 +45,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>nfe-api</finalName>
+		<finalName>sefaz.nfe.core</finalName>
 	</build>
 
 </project>

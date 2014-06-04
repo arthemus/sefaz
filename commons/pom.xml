@@ -13,10 +13,10 @@
 	<artifactId>sefaz.commons</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Classes utilitarias para NF-e</name>
+	<name>Classes utilitarias para os modulos do projeto Sefaz</name>
 
 	<build>
-		<finalName>sefaz-commons</finalName>
+		<finalName>sefaz.commons</finalName>
 	</build>
 
 </project>
