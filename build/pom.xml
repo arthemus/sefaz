@@ -8,7 +8,7 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>Build Sefaz</name>
+	<name>Build Projeto Sefaz</name>
 
 	<modules>
 		<module>../certificado</module>
@@ -23,8 +23,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.6</maven.compiler.source>
-		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
 
 	<repositories>
@@ -35,20 +33,29 @@
 		</repository>
 	</repositories>
 
-	<!--
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
 			<name>releases</name>
-			<url>http://nexus-softlandsistemas.rhcloud.com/nexus/content/repositories/releases</url>
+			<url>http://nexus-arthemus.rhcloud.com/nexus/content/repositories/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>snapshots</name>
-			<url>http://nexus-softlandsistemas.rhcloud.com/nexus/content/repositories/snapshots</url>
+			<url>http://nexus-arthemus.rhcloud.com/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
-	-->
+
+	<developers>
+		<developer>
+			<id>arthemus.moreira</id>
+			<name>Arthemus C. Moreira</name>
+			<email>arthemus.moreira@gmail.com</email>
+			<roles>
+				<role>Contributor</role>
+			</roles>
+		</developer>
+	</developers>
 
 	<dependencies>
 
