@@ -1,18 +1,48 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
+  	<modelVersion>4.0.0</modelVersion>
 
-  <parent>
+  	<parent>
 		<groupId>org.sefaz</groupId>
 		<artifactId>sefaz</artifactId>
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../build/pom.xml</relativePath>
 	</parent>
 
-  <artifactId>sefaz.esocial.core</artifactId>
-  <packaging>jar</packaging>
+  	<artifactId>sefaz.esocial.core</artifactId>
+  	<packaging>jar</packaging>
 
-  <name>Implementacao do SPED Social</name>
+  	<name>Implementacoes do SPED Social</name>
+
+<dependencies>
+
+		<dependency>
+			<groupId>org.sefaz</groupId>
+			<artifactId>sefaz.certificado</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.sefaz</groupId>
+			<artifactId>sefaz.commons</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.sefaz</groupId>
+			<artifactId>sefaz.esocial.wsdl</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.sefaz</groupId>
+			<artifactId>sefaz.esocial.xsd</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+
+	</dependencies>
 
 	<build>
 		<finalName>sefaz.esocial.core</finalName>

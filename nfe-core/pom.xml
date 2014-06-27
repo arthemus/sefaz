@@ -13,7 +13,7 @@
 	<artifactId>sefaz.nfe.core</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Implementacao do SPED NF-e</name>
+	<name>Implementacoes do SPED NF-e</name>
 
 	<dependencies>
 

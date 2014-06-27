@@ -13,7 +13,7 @@
 	<artifactId>sefaz.nfe.xsd</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Compilacao dos Schemas XSD da NF-e 2.0</name>
+	<name>Schemas XSD da NF-e 2.0</name>
 
 	<build>
 		<finalName>sefaz.nfe.xsd</finalName>

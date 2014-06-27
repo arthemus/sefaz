@@ -13,7 +13,7 @@
 	<artifactId>sefaz.nfe.wsdl2</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Compilacao dos enderecos WebServices da NF-e Versao 2.0</name>
+	<name>WebServices da NF-e Versao 2.0</name>
 
 	<build>
 		<finalName>sefaz.nfe.wsdl2</finalName>

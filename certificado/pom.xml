@@ -13,7 +13,7 @@
 	<artifactId>sefaz.certificado</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Definicoes dos certificados digitais</name>
+	<name>Certificados Digitais</name>
 
 	<build>
 		<finalName>sefaz.certificado</finalName>

@@ -12,7 +12,7 @@
   <artifactId>sefaz.esocial.xsd</artifactId>
   <packaging>jar</packaging>
 
-  <name>Compilacao dos Schemas XSD do sistema e-Social</name>
+  <name>Schemas XSD do SPED Social</name>
 
 	<build>
 		<finalName>sefaz.esocial.xsd</finalName>

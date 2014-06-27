@@ -13,7 +13,7 @@
 	<artifactId>sefaz.commons</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Classes utilitarias para os modulos do projeto Sefaz</name>
+	<name>Componentes Utilitarios</name>
 
 	<build>
 		<finalName>sefaz.commons</finalName>
