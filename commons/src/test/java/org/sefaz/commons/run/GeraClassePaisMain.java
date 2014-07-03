@@ -14,8 +14,10 @@ import org.sefaz.commons.Pais;
  */
 public class GeraClassePaisMain {
 
+	private static Scanner scan;
+
 	public static void main(String[] args) {		
-		Scanner scan = new Scanner(GeraClassePaisMain.class.getResourceAsStream("/paises.txt"));			
+		scan = new Scanner(GeraClassePaisMain.class.getResourceAsStream("/paises.txt"));			
 		while (scan.hasNext()) {
 			String item = scan.nextLine();			
 			String novo = Normalizer.normalize(item, Normalizer.Form.NFD);  
